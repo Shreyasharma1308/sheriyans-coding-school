@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#box1{
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: lavender 4px 4px 4px 4px;
+}
+#box2{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: lavender 4px 4px 4px 4px;
+}
+#box3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(47, 151, 255);
+    padding: 10px 10px;
+    margin: 10px 10px;
+    box-shadow: lavender 4px 4px 4px 4px;
+}
