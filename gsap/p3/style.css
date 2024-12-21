@@ -8,62 +8,45 @@ html,body{
     height: 100%;
     width: 100%;
 }
+body{
+    overflow-x: hidden;
+}
 #page1{
     height: 100%;
     width: 100%;
-    background-color: rgb(232, 78, 78);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    text-transform: uppercase;
-}
-#box{
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    display:flex ;
-    align-items: center;
-    justify-content: center;
-}
-#box1{
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    position: relative; 
-}
-#box1 h1{
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    background-color:rgb(157, 157, 252);
     
 }
-#box1 h2{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    
-}
+
 #page2{
     height: 100%;
     width: 100%;
-    background-color: lavender;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
+    background-color:rgb(104, 104, 241);
     text-transform: uppercase;
-    color: black;
     
 }
-#page2 h1{
-    gap: 50px;
-}
+
 #page3{
     height: 100%;
     width: 100%;
-    background-color: rgba(65, 105, 225, 0.788);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    text-transform: uppercase;
+    background-color:rgb(47, 47, 243);
+    
+}
+
+#page2 img{
+    position: relative;
+    height: 100%;
+    width: 20%;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#page2 h1{
+    position: absolute;
+    font-size: 31vw;
+    z-index: 9;
+    color: black;
+    top: 25%;
+    font-weight: 500;
+
 }

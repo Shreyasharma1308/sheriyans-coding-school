@@ -1,35 +1,36 @@
-gsap.from("#page1 #box",{
-    opacity:0,
-    rotate:360,
-    delay:1,
-    duration:1,
-    
-})
-gsap.from("#page2 h1",{
-    opacity:0,
-    
-    duration:2,
-    scrollTrigger:{
-        trigger: "#page2 h1",
-        scroller:"body",
-        start:"top 60%",
-        end:"top 50%",
-        scrub:2,
+
+
+// var t1 = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: "#page2",
+//         scroller: "body",
+//         start: "top 0%",
+//         end: "top -100%",
+//         scrub: 2,
+//         pin: true,
         
-        
-    }
-})
-gsap.from("#page2 h2",{
-    opacity:0,
+//     }
+// });
+
+// t1.to("#page2 img", {
+//     width: "100%"
+// });
+
+// t1.to("#page2 h1", {
+//     transform: "translateX(-120%)",
    
-    duration:2,
-    scrollTrigger:{
-        trigger: "#page2 h2 ",
-        scroller:"body",
-        start:"top 60%",
-        end:"top 50%",
-        scrub:2,
-        
-        
+// });
+var t1 = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#page2",
+        scroller: "body",
+        start: "top top",
+        end: "bottom top",
+        scrub: 2,
+        pin: true,
+        markers: true, 
     }
-})
+});
+
+t1.to("#page2 img", { width: "100%", duration: 2 })
+  .to("#page2 h1", { transform: "translateX(-120%)", duration: 2 }, "<"); // "<" makes them play simultaneously
